@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.body-home{
+
+    background-image: url(./starter-code/assets/home/background-home-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrapper-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.menu-desktop{
+    background-color:rgba(97, 97, 110, 0.199);
+    display: flex;
+    padding: 2rem 8rem;
+    width: 50rem;
+    position: relative;
+   
+ 
+    
+    
+}
+.menu-desktop ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    
+}
+.menu-desktop ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+.menu-desktop ul li span{
+    font-weight: 800;
+}
+.menu-desktop ul li:nth-child(1).active::after{ /*Asi selecciono el home, el 2 seria destination y asi*/
+
+    content: "";
+    width: 4rem;
+    height: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 75%;
+}
+.menu-desktop ul li:nth-child(2).active::after{ /*Seleeciono destination para el subrayado*/
+
+    content: "";
+    width: 7rem;
+    height: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 54%;
+}
+.menu-desktop ul li:nth-child(3).active::after{ /*Seleeciono crew para el subrayado*/
+
+    content: "";
+    width: 4rem;
+    height: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 39%;
+}
+.menu-desktop ul li:nth-child(4).active::after{ /*Seleeciono tehcnology para el subrayado*/
+
+    content: "";
+    width: 8rem;
+    height: 0.2rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 16.5%;
+}
+.wrapper-center{
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    margin-top: 5rem;
+    justify-content: space-between;
+}
+.wrapper-center-text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: #fff;
+    gap: 2rem;
+    padding-left: 2rem;
+}
+.wrapper-center-text h3{
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.wrapper-center-text h1{
+    font-weight: 400;
+    font-size: 100px;
+    letter-spacing: 10px;
+}
+.wrapper-center-text p{
+    width:55%;
+    line-height: 25px;
+}
+.wrapper-center button{
+    border: none;
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 5rem;
+    cursor: pointer;
+    margin-right: 5rem;
+    transform: scale(1);
+    transition: 0.5s; /*Para que al sacar el mouse tambien vuelva a achicarse en 1s*/
+}
+.wrapper-center button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+.wrapper-center button:hover{
+    transform: scale(1.2);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
+    
+
+}
+
+
+/*Destination*/
+.body-destination{
+    background-image: url(./starter-code/assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+}
+.wrapper-destination{
+    display: flex;
+    gap: 5rem;
+}
+.pick-your-destination{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5rem;
+    gap: 2.5rem;
+    margin-bottom: 2em;
+
+}
+.pick-your-destination h3 span{
+    color: rgba(160, 158, 158, 0.692);
+}
+.pick-your-destination h3 {
+    color: #fff;
+}
+.wrapper-right{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-left: 5rem;
+}
+.wrapper-right ul{
+    display: flex;
+    list-style: none;
+    color: #fff;
+    gap: 3rem;
+    padding: 0.5em 0em;
+    position: relative;
+}
+.wrapper-right ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.wrapper-right ul li:nth-child(1).active::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0.5%;
+    
+}
+.wrapper-right ul li:nth-child(2).active::after{
+    content: "";
+    width: 49.5px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 15.5%;
+    
+}
+.wrapper-right ul li:nth-child(3).active::after{
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 30.2%;
+    
+}
+.wrapper-right ul li:nth-child(4).active::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 47.6%;
+    
+}
+.wrapper-right h1{
+    font-size: 100px;
+    color: #fff;
+    font-weight: 200;
+}
+.wrapper-right .parrafo{
+    color: #fff;
+    width: 70%;
+    line-height: 25px;
+}
+.wrapper-right hr{
+    width: 65%;
+    
+    
+}
+.dates{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+.dates-info{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 0.5rem;
+}
+.dates-info h4{
+    font-weight: 200;
+}
+.dates-info p{
+    font-size: 32px;
+}
+
+/*CREW*/
+.body-crew{
+    background-image: url(./starter-code/assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+}
+.wrapper-crew{
+    display: flex;
+   
+   
+}
+.wrapper-left-crew{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    margin-top: 6rem;
+    padding-left: 8em;
+
+    text-align: start;
+    margin-bottom: 5rem;
+}
+.wrapper-left-crew h3 span{
+    color: rgba(160, 158, 158, 0.692);
+}
+.wrapper-left-crew h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.wrapper-left-crew-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.wrapper-left-crew-texts h2{
+    color: #9e9797;
+    font-weight: 200;
+    font-size: 30px;
+}
+.wrapper-left-crew-texts h1{
+    font-weight: 200;
+    color: #fff;
+    font-size: 50px;
+}
+.wrapper-left-crew-texts p{
+    width: 70%;
+    color: #fff;
+    line-height: 25px;
+}
+.wrapper-right-crew{
+    display: flex;
+    align-items: flex-end;
+
+    margin-right: 18rem;
+    width: max-content;
+    height: max-content;
+    margin-top: 28%;
+}
+.wrapper-right-crew-1{
+    margin-top: 21.2%;
+}
+.wrapper-right-crew-2{
+    margin-top: 31.5%;
+}
+.wrapper-right-crew-3{
+    margin-top: 25.2%;
+}
+.wrapper-right-crew img{
+    max-width: 100%;
+    scale: 1.5;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.buttons a{
+    background-color: rgba(128, 128, 128, 0.521);
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.buttons a.active{
+    background-color: #fff;
+}
+
+/*TECHNOLOGY*/
+.body-technology{
+    background-image: url(./starter-code/assets/technology/background-technology-desktop.jpg);
+    background-size: cover;
+}
